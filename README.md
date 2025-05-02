@@ -1,11 +1,11 @@
-[![Screenshot of the Website](https://raw.githubusercontent.com/mikepierce/conference-website-template/master/screenshot.png)](https://mikepierce.github.io/conference-website-template/)
+[![Screenshot of the Website](https://raw.githubusercontent.com/mikepierce/Workshop-website-template/master/screenshot.png)](https://mikepierce.github.io/Workshop-website-template/)
 
-An HTML/CSS website template perfect for a small academic or technology conference or seminar.
+An HTML/CSS website template perfect for a small academic or technology Workshop or seminar.
 The template is quick to deploy and straightforward to customize.
-You can [explore it live here](https://mikepierce.github.io/conference-website-template/),
+You can [explore it live here](https://mikepierce.github.io/Workshop-website-template/),
 and see some folks' use of the template
 [here](https://math.ucr.edu/~mathconn/) 
-and [here](https://data-science-conference.github.io) 
+and [here](https://data-science-Workshop.github.io) 
 and [here](https://aquaticdatasciopensci.github.io) 
 and [here](https://comp-expe.github.io) 
 and [here](https://enba-phd-call.github.io)
@@ -26,11 +26,11 @@ See that link for more details, but the basic procedure is this:
 
  2. Click the *Use this template* button above, 
  being sure to give your copy of this repository a more apt name,
- like *awesome-conference*.
+ like *awesome-Workshop*.
 
  3. In your copy go to *Settings* and scroll down to *GitHub Pages*.
  Under *Source* choose the master branch of your forked copy.
- Then your copy of the website will be hosted at `username.github.io/awesome-conference`.
+ Then your copy of the website will be hosted at `username.github.io/awesome-Workshop`.
 
 ## Editing the Template
 
@@ -45,7 +45,7 @@ section.
 
 It may be helpful to include mathematical notation on this website, especially in the abstracts of talks. 
 This can be done using [MathJax](https://github.com/mathjax/MathJax).
-For an example see the [*programs* page](https://mikepierce.github.io/conference-website-template/program/) of the template site.
+For an example see the [*programs* page](https://mikepierce.github.io/Workshop-website-template/program/) of the template site.
 To include math in a page of this website, include the lines
 
 ````HTML
