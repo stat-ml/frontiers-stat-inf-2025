@@ -300,7 +300,7 @@
                 XX:YYzm
             </td>
             <td class="title">
-                Asymptotic FDR control with model-X knockoffs: is moments matching sufficient? 
+                Asymptotic FDR control with Model-X knockoffs: is moments matching sufficient? 
             </td>
         </tr>
         <tr>
@@ -310,7 +310,7 @@
         </tr>
         <tr>
             <td class="abstract">
-                We propose a unified theoretical framework for studying the robustness of the model-X knockoffs framework by investigating the asymptotic false discovery rate (FDR) control of the practically implemented approximate knockoffs procedure. This procedure deviates from the model-X knockoffs framework by substituting the true covariate distribution with a user-specified distribution that can be learned using in-sample observations. By replacing the distributional exchangeability condition of the model-X knockoff variables with three conditions on the approximate knockoff statistics, we establish that the approximate knockoffs procedure achieves the asymptotic FDR control. Using our unified framework, we further prove that an arguably most popularly used knockoff variable generation method--the Gaussian knockoffs generator based on the first two moments matching--achieves the asymptotic FDR control when the two-moment-based knockoff statistics are employed in the knockoffs inference procedure. For the first time in the literature, our theoretical results justify formally the effectiveness and robustness of the Gaussian knockoffs generator. Simulation and real data examples are conducted to validate the theoretical findings.
+                We propose a unified theoretical framework for studying the robustness of the Model-X knockoffs framework by investigating the asymptotic false discovery rate (FDR) control of the practically implemented approximate knockoffs procedure. This procedure deviates from the Model-X knockoffs framework by substituting the true covariate distribution with a user-specified distribution that can be learned using in-sample observations. By replacing the distributional exchangeability condition of the Model-X knockoff variables with three conditions on the approximate knockoff statistics, we establish that the approximate knockoffs procedure achieves the asymptotic FDR control. Using our unified framework, we further prove that an arguably most popularly used knockoff variable generation method--the Gaussian knockoffs generator based on the first two moments matching--achieves the asymptotic FDR control when the two-moment-based knockoff statistics are employed in the knockoffs inference procedure. For the first time in the literature, our theoretical results justify formally the effectiveness and robustness of the Gaussian knockoffs generator. Simulation and real data examples are conducted to validate the theoretical findings.
             </td>
         </tr>
     </table>
@@ -479,7 +479,7 @@
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+                Distinguishing between two distributions based on observed data is a classical problem in statistics and machine learning. But what if we aim to go further—not just test, but actually estimate a distribution close to the true one in, say, Kullback-Leibler divergence? Can we do this knowing only that the true distribution lies in a known class, without structural assumptions on the individual densities? In this talk, I will review classical results and present recent developments on this question. The focus will be on high-probability error bounds that are optimal up to constants in this general setting.
             </td>
         </tr>
     </table>
@@ -637,7 +637,7 @@
                 XX:YYzm
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Gaussian approximation of empirical processes 
             </td>
         </tr>
         <tr>
@@ -648,6 +648,27 @@
         <tr>
             <td class="abstract">
                 In this talk we develop non-asymptotic Gaussian approximation results for the sampling distribution of suprema of empirical processes when the indexing function class \(\mathcal{F}_n\) varies with the sample size \(n\) and may not be Donsker. Prior approximations of this type required upper bounds on the metric entropy of \(\mathcal{F}_n\) and uniform lower bounds on the variance of \(f \in \mathcal{F}_n\) which, both, limited their applicability to high-dimensional inference problems. In contrast, our results hold under simpler conditions on boundedness, continuity, and the strong variance of the approximating Gaussian process. The results are broadly applicable and yield a novel procedure for bootstrapping the distribution of empirical process suprema based on the truncated Karhunen–Loève decomposition of the approximating Gaussian process. We demonstrate the flexibility of this new bootstrap procedure by applying it to three fundamental problems: simultaneous inference on parameter vectors, construction of simultaneous confidence bands for functions in reproducing kernel Hilbert spaces, and inference on shallow neural networks.
+            </td>
+        </tr>
+    </table>
+
+    <table id="Yuan Yao">
+        <tr>
+            <td class="date" rowspan="3">
+                XX:YYzm
+            </td>
+            <td class="title">
+                Controlling the False Discovery Rate in Transformational Sparsity via Split Knockoffs 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yuan Yao (HKUST)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Controlling the False Discovery Rate (FDR) with finite-sample guarantees in variable selection procedures is crucial for ensuring trustworthy and reproducible discoveries. Although extensive research has focused on FDR control in sparse linear models, challenges persist when the sparsity constraint is imposed not directly on the parameters but on a linear transformation of them. Examples of such settings include total variation, wavelet transforms, fused LASSO, and trend filtering. <br> In this talk, we introduce the Split Knockoff method -- a data-adaptive approach to FDR control tailored for transformational sparsity. Our method leverages both variable splitting and data splitting: the linear transformation constraint is relaxed to its Euclidean proximity in a lifted parameter space, yielding an orthogonal design that enhances statistical power and facilitates the creation of orthogonal Split Knockoff copies. To overcome the challenge posed by the failure of exchangeability -- stemming from heterogeneous noise introduced by the transformation -- we develop novel inverse supermartingale structures that ensure provable FDR control even when directional effects are present. We also discuss a generalization to the Model-X framework, which achieves robust FDR control provided that the marginal distribution of the random design is accurately estimated. Finally, we demonstrate the effectiveness of our approach with applications to an Alzheimer's Disease study and the assessment of large language models.
             </td>
         </tr>
     </table>
