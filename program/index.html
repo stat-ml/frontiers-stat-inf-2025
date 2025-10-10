@@ -64,23 +64,157 @@
         </tr>
     </table>-->
 
-    <table id="Yuan Zhang">
+    <table>
         <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
+            <td class="date" rowspan="2">
+                8:45am
             </td>
-            <td class="title">
-                Faithful Group Shapley Value 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Yuan Zhang (Ohio State University)
+            <td class="title-special">
+                Registration, Coffee &amp; Tea Break
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Data Shapley is an important tool for data valuation, which quantifies the contribution of individual data points to machine learning models. In practice, group-level data valuation is desirable when data providers contribute data in batch. However, we identify that existing group-level extensions of Data Shapley are vulnerable to shell company attacks, where strategic group splitting can unfairly inflate valuations. We propose Faithful Group Shapley Value (FGSV) that uniquely defends against such attacks. Building on original mathematical insights, we develop a provably fast and accurate approximation algorithm for computing FGSV. Empirical experiments demonstrate that our algorithm significantly outperforms state-of-the-art methods in computational efficiency and approximation accuracy, while ensuring faithful group-level valuation.
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    <table id="Han Zhao">
+        <tr>
+            <td class="date" rowspan="3">
+                9:00am
+            </td>
+            <td class="title">
+                Revisiting Scalarization in Multi-Task Learning 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Han Zhao (University of Illinois Urbana-Champaign)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Linear scalarization, i.e., combining all loss functions by a weighted sum, has been the default choice in the literature of multi-task learning (MTL) since its inception. In recent years, there has been a surge of interest in developing Specialized Multi-Task Optimizers (SMTOs) that treat MTL as a multi-objective optimization problem. However, it remains open whether there is a fundamental advantage of SMTOs over scalarization. In this talk, I will revisit scalarization from a theoretical perspective. I will be focusing on linear MTL models and studying whether scalarization is capable of fully exploring the Pareto front. Our findings reveal that, in contrast to recent works that claimed empirical advantages of scalarization, when the model is under-parametrized,  scalarization is inherently incapable of full exploration, especially for those Pareto optimal solutions that strike the balanced trade-offs between multiple tasks. I will conclude the talk by briefly discussing the extension of our results to general nonlinear neural networks and our recent work on using online Chebyshev scalarization to controllably steer the search of Pareto optimal solutions.
+            </td>
+        </tr>
+    </table>
+
+    <table id="Fanny Yang">
+        <tr>
+            <td class="date" rowspan="3">
+                9:35am
+            </td>
+            <td class="title">
+                On the sample complexity of semi-supervised multi-objective learning 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Fanny Yang (ETHZ)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In multi-objective learning (MOL), several possibly competing prediction tasks must be solved jointly by a single model. Achieving good trade-offs may require a model class G with larger capacity than what is necessary for solving the individual tasks. This, in turn, increases the statistical cost, as reflected in known MOL bounds that depend on the complexity of G. We show that this cost is unavoidable for some losses, even in an idealized semi-supervised setting, where the learner has access to the Bayes-optimal solutions for the individual tasks as well as the marginal distributions over the covariates. On the other hand, for objectives defined with Bregman losses, we prove that the complexity of G may come into play only in terms of unlabeled data. Concretely, we establish sample complexity upper bounds, showing precisely when and how unlabeled data can significantly alleviate the need for labeled data. These rates are achieved by a simple, semi-supervised algorithm via pseudo-labeling.
+            </td>
+        </tr>
+    </table>
+
+    <table id="Yang Feng">
+        <tr>
+            <td class="date" rowspan="3">
+                10:10am
+            </td>
+            <td class="title">
+                Regularized Fine-Tuning for Representation Multi-Task Learning: Adaptivity, Minimax Optimality, and Robustness
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yang Feng (NYU)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We study multi-task linear regression through the lens of regularized fine-tuning, where tasks share a latent low-dimensional structure but may deviate from it or include outliers. Unlike classical models that assume a common subspace, we allow each task’s subspace to drift within a similarity radius and permit an unknown fraction of tasks to violate the shared structure. We propose a penalized empirical-risk algorithm and a spectral method that adapt automatically to both the degree of subspace similarity and the proportion of outliers. We establish information-theoretic lower bounds and show that our methods achieve these rates up to constants, with the spectral method attaining exact minimax optimality in the absence of outliers. Moreover, our estimators are robust: they never perform worse than independent single-task regression and yield strict improvements when tasks are moderately similar and outliers are sparse. A thresholding scheme further adapts to unknown intrinsic dimension, and experiments validate the theory.
+            </td>
+        </tr>
+    </table>
+
+    <!-- Coffee break 1 -->
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:45am
+            </td>
+            <td class="title-special">
+                Coffee &amp; Tea Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    <table id="Olga Klopp">
+        <tr>
+            <td class="date" rowspan="3">
+                11:15am
+            </td>
+            <td class="title">
+                Semi‑Supervised Learning on Graphs with GNNs 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Olga Klopp (ESSEC)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                We study semi‑supervised node prediction on graphs where responses arise from a graph‑aware feature operator followed by a smooth regression map. Within a class combining skip‑connected GCN propagation with a fully connected ReLU network, we (i) derive an oracle inequality for population risk under random label masks that separates approximation and estimation error and exposes dependence on the labeled fraction, covering numbers, and a receptive‑field constant; (ii) show skip connections exactly represent multi‑hop polynomial filters, mitigating over‑smoothing; (iii) give covering‑number bounds; and (iv) quantify robustness of our algorithm. These results link classical graph regularization and modern GNN design.
+            </td>
+        </tr>
+    </table>
+
+    <table id="Yuan Yao">
+        <tr>
+            <td class="date" rowspan="3">
+                11:40am
+            </td>
+            <td class="title">
+                Controlling the False Discovery Rate in Transformational Sparsity via Split Knockoffs 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yuan Yao (HKUST)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Controlling the False Discovery Rate (FDR) with finite-sample guarantees in variable selection procedures is crucial for ensuring trustworthy and reproducible discoveries. Although extensive research has focused on FDR control in sparse linear models, challenges persist when the sparsity constraint is imposed not directly on the parameters but on a linear transformation of them. Examples of such settings include total variation, wavelet transforms, fused LASSO, and trend filtering. <br> In this talk, we introduce the Split Knockoff method &mdash; a data-adaptive approach to FDR control tailored for transformational sparsity. Our method leverages both variable splitting and data splitting: the linear transformation constraint is relaxed to its Euclidean proximity in a lifted parameter space, yielding an orthogonal design that enhances statistical power and facilitates the creation of orthogonal Split Knockoff copies. To overcome the challenge posed by the failure of exchangeability &mdash; stemming from heterogeneous noise introduced by the transformation &mdash; we develop novel inverse supermartingale structures that ensure provable FDR control even when directional effects are present. We also discuss a generalization to the Model-X framework, which achieves robust FDR control provided that the marginal distribution of the random design is accurately estimated. Finally, we demonstrate the effectiveness of our approach with applications to an Alzheimer's Disease study and the assessment of large language models.
+            </td>
+        </tr>
+    </table>
+
+    <!-- Lunch -->
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:20pm
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
             </td>
         </tr>
     </table>
@@ -88,7 +222,7 @@
     <table id="Ajay Jasra">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+                14:15pm
             </td>
             <td class="title">
                 On Unbiased Stochastic Approximation 
@@ -106,23 +240,95 @@
         </tr>
     </table>
 
-    <table id="Han Zhao">
+    <table id="Alexander Giessing">
+        <tr>
+            <td class="date" rowspan="3">
+                14:50pm
+            </td>
+            <td class="title">
+                Gaussian approximation of empirical processes 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Alexander Giessing (NUS)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In this talk we develop non-asymptotic Gaussian approximation results for the sampling distribution of suprema of empirical processes when the indexing function class \(\mathcal{F}_n\) varies with the sample size \(n\) and may not be Donsker. Prior approximations of this type required upper bounds on the metric entropy of \(\mathcal{F}_n\) and uniform lower bounds on the variance of \(f \in \mathcal{F}_n\) which, both, limited their applicability to high-dimensional inference problems. In contrast, our results hold under simpler conditions on boundedness, continuity, and the strong variance of the approximating Gaussian process. The results are broadly applicable and yield a novel procedure for bootstrapping the distribution of empirical process suprema based on the truncated Karhunen–Loève decomposition of the approximating Gaussian process. We demonstrate the flexibility of this new bootstrap procedure by applying it to three fundamental problems: simultaneous inference on parameter vectors, construction of simultaneous confidence bands for functions in reproducing kernel Hilbert spaces, and inference on shallow neural networks.
+            </td>
+        </tr>
+    </table>
+
+    <!-- Coffee break 2 -->
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                15:20pm &mdash; <br> &mdash;15:50pm
+            </td>
+            <td class="title-special">
+                Coffee &amp; Tea Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    <table id="Arnak Dalalyan">
+        <tr>
+            <td class="date" rowspan="3">
+                15:50pm
+            </td>
+            <td class="title">
+                Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal Bounds 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Arnak Dalalyan (ENSAE)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Generative modeling aims to produce new random examples from an unknown target distribution, given access to a finite collection of examples. Among the leading approaches, denoising diffusion probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion process driven by an estimated score function. In this work, we first provide empirical evidence that DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than previously known results. Furthermore, we observe that the obtained rates match those known in the Gaussian case, implying their optimality. <br>              
+                The talk is based on a joint <a hreff="https://arxiv.org/abs/2506.09681">work</a> with E. Vardanyan and V. Arsenyan.
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Poster session -->
+    <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">
+                17:10pm
+            </td>
+            <td class="title">
+                Poster session
+            </td>
+        </tr>
+    </table>
+
+    <table id="Yuan Zhang">
         <tr>
             <td class="date" rowspan="3">
                 XX:YYzm
             </td>
             <td class="title">
-                Revisiting Scalarization in Multi-Task Learning 
+                Faithful Group Shapley Value 
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Han Zhao (University of Illinois Urbana-Champaign)
+                Yuan Zhang (Ohio State University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Linear scalarization, i.e., combining all loss functions by a weighted sum, has been the default choice in the literature of multi-task learning (MTL) since its inception. In recent years, there has been a surge of interest in developing Specialized Multi-Task Optimizers (SMTOs) that treat MTL as a multi-objective optimization problem. However, it remains open whether there is a fundamental advantage of SMTOs over scalarization. In this talk, I will revisit scalarization from a theoretical perspective. I will be focusing on linear MTL models and studying whether scalarization is capable of fully exploring the Pareto front. Our findings reveal that, in contrast to recent works that claimed empirical advantages of scalarization, when the model is under-parametrized,  scalarization is inherently incapable of full exploration, especially for those Pareto optimal solutions that strike the balanced trade-offs between multiple tasks. I will conclude the talk by briefly discussing the extension of our results to general nonlinear neural networks and our recent work on using online Chebyshev scalarization to controllably steer the search of Pareto optimal solutions.
+                Data Shapley is an important tool for data valuation, which quantifies the contribution of individual data points to machine learning models. In practice, group-level data valuation is desirable when data providers contribute data in batch. However, we identify that existing group-level extensions of Data Shapley are vulnerable to shell company attacks, where strategic group splitting can unfairly inflate valuations. We propose Faithful Group Shapley Value (FGSV) that uniquely defends against such attacks. Building on original mathematical insights, we develop a provably fast and accurate approximation algorithm for computing FGSV. Empirical experiments demonstrate that our algorithm significantly outperforms state-of-the-art methods in computational efficiency and approximation accuracy, while ensuring faithful group-level valuation.
             </td>
         </tr>
     </table>
@@ -211,6 +417,7 @@
             </td>
         </tr>
     </table>
+
     <table id="Francesco Orabona">
         <tr>
             <td class="date" rowspan="3">
@@ -231,6 +438,7 @@
             </td>
         </tr>
     </table>
+
     <table id="Rob Hyndman">
         <tr>
             <td class="date" rowspan="3">
@@ -252,7 +460,7 @@
         </tr>
     </table>
 
-    <table id="PUTSPEAKERNAMEHERE">
+    <table id="Alexandre Tsybakov">
         <tr>
             <td class="date" rowspan="3">
                 XX:YYzm
@@ -357,91 +565,6 @@
         </tr>
     </table>
 
-    <table id="Olga Klopp">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                Semi‑Supervised Learning on Graphs with GNNs 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Olga Klopp (ESSEC)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                We study semi‑supervised node prediction on graphs where responses arise from a graph‑aware feature operator followed by a smooth regression map. Within a class combining skip‑connected GCN propagation with a fully connected ReLU network, we (i) derive an oracle inequality for population risk under random label masks that separates approximation and estimation error and exposes dependence on the labeled fraction, covering numbers, and a receptive‑field constant; (ii) show skip connections exactly represent multi‑hop polynomial filters, mitigating over‑smoothing; (iii) give covering‑number bounds; and (iv) quantify robustness of our algorithm. These results link classical graph regularization and modern GNN design.
-            </td>
-        </tr>
-    </table>
-
-    <table id="Fanny Yang">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                On the sample complexity of semi-supervised multi-objective learning 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Fanny Yang (ETHZ)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                In multi-objective learning (MOL), several possibly competing prediction tasks must be solved jointly by a single model. Achieving good trade-offs may require a model class G with larger capacity than what is necessary for solving the individual tasks. This, in turn, increases the statistical cost, as reflected in known MOL bounds that depend on the complexity of G. We show that this cost is unavoidable for some losses, even in an idealized semi-supervised setting, where the learner has access to the Bayes-optimal solutions for the individual tasks as well as the marginal distributions over the covariates. On the other hand, for objectives defined with Bregman losses, we prove that the complexity of G may come into play only in terms of unlabeled data. Concretely, we establish sample complexity upper bounds, showing precisely when and how unlabeled data can significantly alleviate the need for labeled data. These rates are achieved by a simple, semi-supervised algorithm via pseudo-labeling.
-            </td>
-        </tr>
-    </table>
-
-    <table id="Arnak Dalalyan">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal Bounds 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Arnak Dalalyan (ENSAE)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Generative modeling aims to produce new random examples from an unknown target distribution, given access to a finite collection of examples. Among the leading approaches, denoising diffusion probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion process driven by an estimated score function. In this work, we first provide empirical evidence that DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than previously known results. Furthermore, we observe that the obtained rates match those known in the Gaussian case, implying their optimality. <br>              
-                The talk is based on a joint <a hreff="https://arxiv.org/abs/2506.09681">work</a> with E. Vardanyan and V. Arsenyan.
-            </td>
-        </tr>
-    </table>
-
-    <table id="Yang Feng">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                Regularized Fine-Tuning for Representation Multi-Task Learning: Adaptivity, Minimax Optimality, and Robustness
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Yang Feng (NYU)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                We study multi-task linear regression through the lens of regularized fine-tuning, where tasks share a latent low-dimensional structure but may deviate from it or include outliers. Unlike classical models that assume a common subspace, we allow each task’s subspace to drift within a similarity radius and permit an unknown fraction of tasks to violate the shared structure. We propose a penalized empirical-risk algorithm and a spectral method that adapt automatically to both the degree of subspace similarity and the proportion of outliers. We establish information-theoretic lower bounds and show that our methods achieve these rates up to constants, with the spectral method attaining exact minimax optimality in the absence of outliers. Moreover, our estimators are robust: they never perform worse than independent single-task regression and yield strict improvements when tasks are moderately similar and outliers are sparse. A thresholding scheme further adapts to unknown intrinsic dimension, and experiments validate the theory.
-            </td>
-        </tr>
-    </table>
-
     <table id="Emilio Porcu">
         <tr>
             <td class="date" rowspan="3">
@@ -526,7 +649,7 @@
         </tr>
     </table>
 
-    <table id="New Statistical Questions in the Age of Large Language Models">
+    <table id="Amit Sharma">
         <tr>
             <td class="date" rowspan="3">
                 XX:YYzm
@@ -547,7 +670,7 @@
         </tr>
     </table>
 
-        <table id="Mathias Drton">
+    <table id="Mathias Drton">
         <tr>
             <td class="date" rowspan="3">
                 XX:YYzm
@@ -627,48 +750,6 @@
         <tr>
             <td class="abstract">
                 In the rapid evolution of Statistics and AI,  we still feel a tension between the “two cultures” - classic statistical inference versus algorithmic prediction. The Bayesian approach has prediction in its foundations, and may naturally combine both cultures. In a Bayesian predictive approach, one directly reasons on prediction of future observations, bypassing models and parameters, or possibly using them implicitly.  In a nutshell, while Statistics traditionally goes from inference to prediction, here one goes from prediction to inference. This approach allows us to regard predictive algorithms - computationally convenient approximations of exact Bayesian solutions, or black-box predictive engines - as Bayesian predictive learning rules, and to provide them with full Bayesian uncertainty quantification. In the talk, I will review basic concepts and recent results, and discuss ongoing directions, such as calibrating the predictive rule for predictive ‘efficiency’ and good inferential properties.
-            </td>
-        </tr>
-    </table>
-
-    <table id="Alexander Giessing">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                Gaussian approximation of empirical processes 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Alexander Giessing (NUS)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                In this talk we develop non-asymptotic Gaussian approximation results for the sampling distribution of suprema of empirical processes when the indexing function class \(\mathcal{F}_n\) varies with the sample size \(n\) and may not be Donsker. Prior approximations of this type required upper bounds on the metric entropy of \(\mathcal{F}_n\) and uniform lower bounds on the variance of \(f \in \mathcal{F}_n\) which, both, limited their applicability to high-dimensional inference problems. In contrast, our results hold under simpler conditions on boundedness, continuity, and the strong variance of the approximating Gaussian process. The results are broadly applicable and yield a novel procedure for bootstrapping the distribution of empirical process suprema based on the truncated Karhunen–Loève decomposition of the approximating Gaussian process. We demonstrate the flexibility of this new bootstrap procedure by applying it to three fundamental problems: simultaneous inference on parameter vectors, construction of simultaneous confidence bands for functions in reproducing kernel Hilbert spaces, and inference on shallow neural networks.
-            </td>
-        </tr>
-    </table>
-
-    <table id="Yuan Yao">
-        <tr>
-            <td class="date" rowspan="3">
-                XX:YYzm
-            </td>
-            <td class="title">
-                Controlling the False Discovery Rate in Transformational Sparsity via Split Knockoffs 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Yuan Yao (HKUST)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Controlling the False Discovery Rate (FDR) with finite-sample guarantees in variable selection procedures is crucial for ensuring trustworthy and reproducible discoveries. Although extensive research has focused on FDR control in sparse linear models, challenges persist when the sparsity constraint is imposed not directly on the parameters but on a linear transformation of them. Examples of such settings include total variation, wavelet transforms, fused LASSO, and trend filtering. <br> In this talk, we introduce the Split Knockoff method &mdash; a data-adaptive approach to FDR control tailored for transformational sparsity. Our method leverages both variable splitting and data splitting: the linear transformation constraint is relaxed to its Euclidean proximity in a lifted parameter space, yielding an orthogonal design that enhances statistical power and facilitates the creation of orthogonal Split Knockoff copies. To overcome the challenge posed by the failure of exchangeability &mdash; stemming from heterogeneous noise introduced by the transformation &mdash; we develop novel inverse supermartingale structures that ensure provable FDR control even when directional effects are present. We also discuss a generalization to the Model-X framework, which achieves robust FDR control provided that the marginal distribution of the random design is accurately estimated. Finally, we demonstrate the effectiveness of our approach with applications to an Alzheimer's Disease study and the assessment of large language models.
             </td>
         </tr>
     </table>
