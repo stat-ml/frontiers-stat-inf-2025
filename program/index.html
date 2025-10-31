@@ -3,16 +3,32 @@
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
+        </script>
     <meta name="description" content="Frontiers of Statistical Inference 2025 Workshop">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Workshop">
     <title>Program | Frontiers of Statistical Inference 2025</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 350px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            resize: inline;
+            position: relative;
+            z-index: 2;
+        }
+        .responsive-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +36,8 @@
     <div class="banner">
         <img src="assets/abu-dhabi-day-small.jpg" alt="Workshop Template Banner" width="100%">
         <div class="top-left">
-            <span class="title1">Frontiers of</span> <br> <span class="title2">Statistical Inference</span> <span class="year">2025</span>
+            <span class="title1">Frontiers of</span> <br> <span class="title2">Statistical Inference</span> <span
+                class="year">2025</span>
         </div>
         <div class="bottom-right">
             November 24-27, 2025 <br> MBZUAI, Abu Dhabi, UAE
@@ -36,7 +53,7 @@
                 <a title="Speakers" href="speakers">Speakers</a>
             </td>
             <td class="navigation">
-                <a class="current" title="Workshop Program" href="program">Program</a> 
+                <a class="current" title="Workshop Program" href="program">Program</a>
             </td>
             <td class="navigation">
                 <a title="Directions to the Workshop" href="directions">Directions</a>
@@ -46,8 +63,15 @@
 
     <h2>Workshop Program</h2>
 
-    Workshop program will be updated soon. <br>
-<!--    <table>
+    <div class="container">
+        <iframe class="responsive-iframe"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOQVPUH2mwgpad44cMfXgXMJQgsAVgIcWFI9YdGl-QTcSKmvRT7fzt9SRQEqYHjad7ufL8xXYaHyXs/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:E15"></iframe>
+    </div>
+
+    <br> The schedule is subject to change. <br>
+
+    <h2>List of talks</h2>
+    <!--    <table>
         <tr>
             <td class="date" rowspan="2">
                 8:30am
@@ -64,7 +88,7 @@
         </tr>
     </table>-->
 
-    <table>
+    <!-- <table>
         <tr>
             <td class="date" rowspan="2">
                 8:45am
@@ -75,18 +99,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                <!-- Kept for Spacing -->
+                 Kept for Spacing 
             </td>
         </tr>
-    </table>
+    </table> -->
 
     <table id="Han Zhao">
         <tr>
             <td class="date" rowspan="3">
-                9:00am
+
             </td>
             <td class="title">
-                Revisiting Scalarization in Multi-Task Learning 
+                Revisiting Scalarization in Multi-Task Learning
             </td>
         </tr>
         <tr>
@@ -96,7 +120,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                Linear scalarization, i.e., combining all loss functions by a weighted sum, has been the default choice in the literature of multi-task learning (MTL) since its inception. In recent years, there has been a surge of interest in developing Specialized Multi-Task Optimizers (SMTOs) that treat MTL as a multi-objective optimization problem. However, it remains open whether there is a fundamental advantage of SMTOs over scalarization. In this talk, I will revisit scalarization from a theoretical perspective. I will be focusing on linear MTL models and studying whether scalarization is capable of fully exploring the Pareto front. Our findings reveal that, in contrast to recent works that claimed empirical advantages of scalarization, when the model is under-parametrized,  scalarization is inherently incapable of full exploration, especially for those Pareto optimal solutions that strike the balanced trade-offs between multiple tasks. I will conclude the talk by briefly discussing the extension of our results to general nonlinear neural networks and our recent work on using online Chebyshev scalarization to controllably steer the search of Pareto optimal solutions.
+                Linear scalarization, i.e., combining all loss functions by a weighted sum, has been the default choice
+                in the literature of multi-task learning (MTL) since its inception. In recent years, there has been a
+                surge of interest in developing Specialized Multi-Task Optimizers (SMTOs) that treat MTL as a
+                multi-objective optimization problem. However, it remains open whether there is a fundamental advantage
+                of SMTOs over scalarization. In this talk, I will revisit scalarization from a theoretical perspective.
+                I will be focusing on linear MTL models and studying whether scalarization is capable of fully exploring
+                the Pareto front. Our findings reveal that, in contrast to recent works that claimed empirical
+                advantages of scalarization, when the model is under-parametrized, scalarization is inherently incapable
+                of full exploration, especially for those Pareto optimal solutions that strike the balanced trade-offs
+                between multiple tasks. I will conclude the talk by briefly discussing the extension of our results to
+                general nonlinear neural networks and our recent work on using online Chebyshev scalarization to
+                controllably steer the search of Pareto optimal solutions.
             </td>
         </tr>
     </table>
@@ -104,10 +139,10 @@
     <table id="Fanny Yang">
         <tr>
             <td class="date" rowspan="3">
-                9:35am
+
             </td>
             <td class="title">
-                On the sample complexity of semi-supervised multi-objective learning 
+                On the sample complexity of semi-supervised multi-objective learning
             </td>
         </tr>
         <tr>
@@ -117,7 +152,16 @@
         </tr>
         <tr>
             <td class="abstract">
-                In multi-objective learning (MOL), several possibly competing prediction tasks must be solved jointly by a single model. Achieving good trade-offs may require a model class G with larger capacity than what is necessary for solving the individual tasks. This, in turn, increases the statistical cost, as reflected in known MOL bounds that depend on the complexity of G. We show that this cost is unavoidable for some losses, even in an idealized semi-supervised setting, where the learner has access to the Bayes-optimal solutions for the individual tasks as well as the marginal distributions over the covariates. On the other hand, for objectives defined with Bregman losses, we prove that the complexity of G may come into play only in terms of unlabeled data. Concretely, we establish sample complexity upper bounds, showing precisely when and how unlabeled data can significantly alleviate the need for labeled data. These rates are achieved by a simple, semi-supervised algorithm via pseudo-labeling.
+                In multi-objective learning (MOL), several possibly competing prediction tasks must be solved jointly by
+                a single model. Achieving good trade-offs may require a model class G with larger capacity than what is
+                necessary for solving the individual tasks. This, in turn, increases the statistical cost, as reflected
+                in known MOL bounds that depend on the complexity of G. We show that this cost is unavoidable for some
+                losses, even in an idealized semi-supervised setting, where the learner has access to the Bayes-optimal
+                solutions for the individual tasks as well as the marginal distributions over the covariates. On the
+                other hand, for objectives defined with Bregman losses, we prove that the complexity of G may come into
+                play only in terms of unlabeled data. Concretely, we establish sample complexity upper bounds, showing
+                precisely when and how unlabeled data can significantly alleviate the need for labeled data. These rates
+                are achieved by a simple, semi-supervised algorithm via pseudo-labeling.
             </td>
         </tr>
     </table>
@@ -125,10 +169,11 @@
     <table id="Yang Feng">
         <tr>
             <td class="date" rowspan="3">
-                10:10am
+
             </td>
             <td class="title">
-                Regularized Fine-Tuning for Representation Multi-Task Learning: Adaptivity, Minimax Optimality, and Robustness
+                Regularized Fine-Tuning for Representation Multi-Task Learning: Adaptivity, Minimax Optimality, and
+                Robustness
             </td>
         </tr>
         <tr>
@@ -138,13 +183,23 @@
         </tr>
         <tr>
             <td class="abstract">
-                We study multi-task linear regression through the lens of regularized fine-tuning, where tasks share a latent low-dimensional structure but may deviate from it or include outliers. Unlike classical models that assume a common subspace, we allow each task’s subspace to drift within a similarity radius and permit an unknown fraction of tasks to violate the shared structure. We propose a penalized empirical-risk algorithm and a spectral method that adapt automatically to both the degree of subspace similarity and the proportion of outliers. We establish information-theoretic lower bounds and show that our methods achieve these rates up to constants, with the spectral method attaining exact minimax optimality in the absence of outliers. Moreover, our estimators are robust: they never perform worse than independent single-task regression and yield strict improvements when tasks are moderately similar and outliers are sparse. A thresholding scheme further adapts to unknown intrinsic dimension, and experiments validate the theory.
+                We study multi-task linear regression through the lens of regularized fine-tuning, where tasks share a
+                latent low-dimensional structure but may deviate from it or include outliers. Unlike classical models
+                that assume a common subspace, we allow each task’s subspace to drift within a similarity radius and
+                permit an unknown fraction of tasks to violate the shared structure. We propose a penalized
+                empirical-risk algorithm and a spectral method that adapt automatically to both the degree of subspace
+                similarity and the proportion of outliers. We establish information-theoretic lower bounds and show that
+                our methods achieve these rates up to constants, with the spectral method attaining exact minimax
+                optimality in the absence of outliers. Moreover, our estimators are robust: they never perform worse
+                than independent single-task regression and yield strict improvements when tasks are moderately similar
+                and outliers are sparse. A thresholding scheme further adapts to unknown intrinsic dimension, and
+                experiments validate the theory.
             </td>
         </tr>
     </table>
 
     <!-- Coffee break 1 -->
-    <table>
+    <!--     <table>
         <tr>
             <td class="date" rowspan="2">
                 10:45am
@@ -155,18 +210,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                <!-- Kept for Spacing -->
+                 Kept for Spacing 
             </td>
         </tr>
-    </table>
+    </table> -->
 
     <table id="Olga Klopp">
         <tr>
             <td class="date" rowspan="3">
-                11:15am
+
             </td>
             <td class="title">
-                Semi‑Supervised Learning on Graphs with GNNs 
+                Semi‑Supervised Learning on Graphs with GNNs
             </td>
         </tr>
         <tr>
@@ -176,7 +231,14 @@
         </tr>
         <tr>
             <td class="abstract">
-                We study semi‑supervised node prediction on graphs where responses arise from a graph‑aware feature operator followed by a smooth regression map. Within a class combining skip‑connected GCN propagation with a fully connected ReLU network, we (i) derive an oracle inequality for population risk under random label masks that separates approximation and estimation error and exposes dependence on the labeled fraction, covering numbers, and a receptive‑field constant; (ii) show skip connections exactly represent multi‑hop polynomial filters, mitigating over‑smoothing; (iii) give covering‑number bounds; and (iv) quantify robustness of our algorithm. These results link classical graph regularization and modern GNN design.
+                We study semi‑supervised node prediction on graphs where responses arise from a graph‑aware feature
+                operator followed by a smooth regression map. Within a class combining skip‑connected GCN propagation
+                with a fully connected ReLU network, we (i) derive an oracle inequality for population risk under random
+                label masks that separates approximation and estimation error and exposes dependence on the labeled
+                fraction, covering numbers, and a receptive‑field constant; (ii) show skip connections exactly represent
+                multi‑hop polynomial filters, mitigating over‑smoothing; (iii) give covering‑number bounds; and (iv)
+                quantify robustness of our algorithm. These results link classical graph regularization and modern GNN
+                design.
             </td>
         </tr>
     </table>
@@ -184,10 +246,10 @@
     <table id="Yuan Yao">
         <tr>
             <td class="date" rowspan="3">
-                11:50am
+
             </td>
             <td class="title">
-                Controlling the False Discovery Rate in Transformational Sparsity via Split Knockoffs 
+                Controlling the False Discovery Rate in Transformational Sparsity via Split Knockoffs
             </td>
         </tr>
         <tr>
@@ -197,13 +259,28 @@
         </tr>
         <tr>
             <td class="abstract">
-                Controlling the False Discovery Rate (FDR) with finite-sample guarantees in variable selection procedures is crucial for ensuring trustworthy and reproducible discoveries. Although extensive research has focused on FDR control in sparse linear models, challenges persist when the sparsity constraint is imposed not directly on the parameters but on a linear transformation of them. Examples of such settings include total variation, wavelet transforms, fused LASSO, and trend filtering. <br> In this talk, we introduce the Split Knockoff method &mdash; a data-adaptive approach to FDR control tailored for transformational sparsity. Our method leverages both variable splitting and data splitting: the linear transformation constraint is relaxed to its Euclidean proximity in a lifted parameter space, yielding an orthogonal design that enhances statistical power and facilitates the creation of orthogonal Split Knockoff copies. To overcome the challenge posed by the failure of exchangeability &mdash; stemming from heterogeneous noise introduced by the transformation &mdash; we develop novel inverse supermartingale structures that ensure provable FDR control even when directional effects are present. We also discuss a generalization to the Model-X framework, which achieves robust FDR control provided that the marginal distribution of the random design is accurately estimated. Finally, we demonstrate the effectiveness of our approach with applications to an Alzheimer's Disease study and the assessment of large language models.
+                Controlling the False Discovery Rate (FDR) with finite-sample guarantees in variable selection
+                procedures is crucial for ensuring trustworthy and reproducible discoveries. Although extensive research
+                has focused on FDR control in sparse linear models, challenges persist when the sparsity constraint is
+                imposed not directly on the parameters but on a linear transformation of them. Examples of such settings
+                include total variation, wavelet transforms, fused LASSO, and trend filtering. <br> In this talk, we
+                introduce the Split Knockoff method &mdash; a data-adaptive approach to FDR control tailored for
+                transformational sparsity. Our method leverages both variable splitting and data splitting: the linear
+                transformation constraint is relaxed to its Euclidean proximity in a lifted parameter space, yielding an
+                orthogonal design that enhances statistical power and facilitates the creation of orthogonal Split
+                Knockoff copies. To overcome the challenge posed by the failure of exchangeability &mdash; stemming from
+                heterogeneous noise introduced by the transformation &mdash; we develop novel inverse supermartingale
+                structures that ensure provable FDR control even when directional effects are present. We also discuss a
+                generalization to the Model-X framework, which achieves robust FDR control provided that the marginal
+                distribution of the random design is accurately estimated. Finally, we demonstrate the effectiveness of
+                our approach with applications to an Alzheimer's Disease study and the assessment of large language
+                models.
             </td>
         </tr>
     </table>
 
     <!-- Lunch -->
-    <table>
+    <!-- <table>
         <tr>
             <td class="date" rowspan="2">
                 12:20pm
@@ -214,18 +291,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                <!-- Kept for Spacing -->
+                 Kept for Spacing 
             </td>
         </tr>
-    </table>
+    </table> -->
 
     <table id="Ajay Jasra">
         <tr>
             <td class="date" rowspan="3">
-                14:15pm
+
             </td>
             <td class="title">
-                On Unbiased Stochastic Approximation 
+                On Unbiased Stochastic Approximation
             </td>
         </tr>
         <tr>
@@ -235,7 +312,16 @@
         </tr>
         <tr>
             <td class="abstract">
-                We consider the problem of estimating parameters of statistical models associated with differential equations. In particular, we assume that the differential equation can only be solved up to a numerical error; for instance, in the case of stochastic differential equations (SDEs), the Euler-Maruyama method is often used, which introduces time-discretization bias. We adopt an optimization-based paradigm where the objective function (the likelihood function) to be maximized is not available analytically. In this talk, we show how, for certain classes of models, a new randomized stochastic approximation scheme can be used to obtain parameter estimators that eliminate the aforementioned numerical error in mathematical expectation, under suitable assumptions. We detail several applications, including partially observed SDEs and Bayesian inverse problems. Mathematical results are presented alongside numerical simulations demonstrating the efficacy of our methodology.
+                We consider the problem of estimating parameters of statistical models associated with differential
+                equations. In particular, we assume that the differential equation can only be solved up to a numerical
+                error; for instance, in the case of stochastic differential equations (SDEs), the Euler-Maruyama method
+                is often used, which introduces time-discretization bias. We adopt an optimization-based paradigm where
+                the objective function (the likelihood function) to be maximized is not available analytically. In this
+                talk, we show how, for certain classes of models, a new randomized stochastic approximation scheme can
+                be used to obtain parameter estimators that eliminate the aforementioned numerical error in mathematical
+                expectation, under suitable assumptions. We detail several applications, including partially observed
+                SDEs and Bayesian inverse problems. Mathematical results are presented alongside numerical simulations
+                demonstrating the efficacy of our methodology.
             </td>
         </tr>
     </table>
@@ -243,10 +329,10 @@
     <table id="Alexander Giessing">
         <tr>
             <td class="date" rowspan="3">
-                14:50pm
+
             </td>
             <td class="title">
-                Gaussian approximation of empirical processes 
+                Gaussian approximation of empirical processes
             </td>
         </tr>
         <tr>
@@ -256,24 +342,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                In this talk we develop non-asymptotic Gaussian approximation results for the sampling distribution of suprema of empirical processes when the indexing function class \(\mathcal{F}_n\) varies with the sample size \(n\) and may not be Donsker. Prior approximations of this type required upper bounds on the metric entropy of \(\mathcal{F}_n\) and uniform lower bounds on the variance of \(f \in \mathcal{F}_n\) which, both, limited their applicability to high-dimensional inference problems. In contrast, our results hold under simpler conditions on boundedness, continuity, and the strong variance of the approximating Gaussian process. The results are broadly applicable and yield a novel procedure for bootstrapping the distribution of empirical process suprema based on the truncated Karhunen–Loève decomposition of the approximating Gaussian process. We demonstrate the flexibility of this new bootstrap procedure by applying it to three fundamental problems: simultaneous inference on parameter vectors, construction of simultaneous confidence bands for functions in reproducing kernel Hilbert spaces, and inference on shallow neural networks.
-            </td>
-        </tr>
-    </table>
-
-    <!-- Coffee break 2 -->
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                15:20pm &mdash; <br> &mdash;15:50pm
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
+                In this talk we develop non-asymptotic Gaussian approximation results for the sampling distribution of
+                suprema of empirical processes when the indexing function class \(\mathcal{F}_n\) varies with the sample
+                size \(n\) and may not be Donsker. Prior approximations of this type required upper bounds on the metric
+                entropy of \(\mathcal{F}_n\) and uniform lower bounds on the variance of \(f \in \mathcal{F}_n\) which,
+                both, limited their applicability to high-dimensional inference problems. In contrast, our results hold
+                under simpler conditions on boundedness, continuity, and the strong variance of the approximating
+                Gaussian process. The results are broadly applicable and yield a novel procedure for bootstrapping the
+                distribution of empirical process suprema based on the truncated Karhunen–Loève decomposition of the
+                approximating Gaussian process. We demonstrate the flexibility of this new bootstrap procedure by
+                applying it to three fundamental problems: simultaneous inference on parameter vectors, construction of
+                simultaneous confidence bands for functions in reproducing kernel Hilbert spaces, and inference on
+                shallow neural networks.
             </td>
         </tr>
     </table>
@@ -281,10 +361,11 @@
     <table id="Arnak Dalalyan">
         <tr>
             <td class="date" rowspan="3">
-                15:50pm
+
             </td>
             <td class="title">
-                Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal Bounds 
+                Assessing the Quality of Denoising Diffusion Models in Wasserstein Distance: Noisy Score and Optimal
+                Bounds
             </td>
         </tr>
         <tr>
@@ -294,17 +375,26 @@
         </tr>
         <tr>
             <td class="abstract">
-                Generative modeling aims to produce new random examples from an unknown target distribution, given access to a finite collection of examples. Among the leading approaches, denoising diffusion probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion process driven by an estimated score function. In this work, we first provide empirical evidence that DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than previously known results. Furthermore, we observe that the obtained rates match those known in the Gaussian case, implying their optimality. <br>              
-                The talk is based on a joint <a hreff="https://arxiv.org/abs/2506.09681">work</a> with E. Vardanyan and V. Arsenyan.
+                Generative modeling aims to produce new random examples from an unknown target distribution, given
+                access to a finite collection of examples. Among the leading approaches, denoising diffusion
+                probabilistic models (DDPMs) construct such examples by mapping a Brownian motion via a diffusion
+                process driven by an estimated score function. In this work, we first provide empirical evidence that
+                DDPMs are robust to constant-variance noise in the score evaluations. We then establish finite-sample
+                guarantees in Wasserstein-2 distance that exhibit two key features: (i) they characterize and quantify
+                the robustness of DDPMs to noisy score estimates, and (ii) they achieve faster convergence rates than
+                previously known results. Furthermore, we observe that the obtained rates match those known in the
+                Gaussian case, implying their optimality. <br>
+                The talk is based on a joint <a hreff="https://arxiv.org/abs/2506.09681">work</a> with E. Vardanyan and
+                V. Arsenyan.
             </td>
         </tr>
     </table>
-    
+
     <!-- Poster session -->
     <table class="plenary">
         <tr>
             <td class="date" rowspan="3">
-                17:10pm
+
             </td>
             <td class="title">
                 Poster session
@@ -315,10 +405,10 @@
     <table id="Yuan Zhang">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Faithful Group Shapley Value 
+                Faithful Group Shapley Value
             </td>
         </tr>
         <tr>
@@ -328,7 +418,15 @@
         </tr>
         <tr>
             <td class="abstract">
-                Data Shapley is an important tool for data valuation, which quantifies the contribution of individual data points to machine learning models. In practice, group-level data valuation is desirable when data providers contribute data in batch. However, we identify that existing group-level extensions of Data Shapley are vulnerable to shell company attacks, where strategic group splitting can unfairly inflate valuations. We propose Faithful Group Shapley Value (FGSV) that uniquely defends against such attacks. Building on original mathematical insights, we develop a provably fast and accurate approximation algorithm for computing FGSV. Empirical experiments demonstrate that our algorithm significantly outperforms state-of-the-art methods in computational efficiency and approximation accuracy, while ensuring faithful group-level valuation.
+                Data Shapley is an important tool for data valuation, which quantifies the contribution of individual
+                data points to machine learning models. In practice, group-level data valuation is desirable when data
+                providers contribute data in batch. However, we identify that existing group-level extensions of Data
+                Shapley are vulnerable to shell company attacks, where strategic group splitting can unfairly inflate
+                valuations. We propose Faithful Group Shapley Value (FGSV) that uniquely defends against such attacks.
+                Building on original mathematical insights, we develop a provably fast and accurate approximation
+                algorithm for computing FGSV. Empirical experiments demonstrate that our algorithm significantly
+                outperforms state-of-the-art methods in computational efficiency and approximation accuracy, while
+                ensuring faithful group-level valuation.
             </td>
         </tr>
     </table>
@@ -336,10 +434,10 @@
     <table id="Jinchi Lv">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                LLM-Powered CPI Prediction Inference with Online Text Time Series 
+                LLM-Powered CPI Prediction Inference with Online Text Time Series
             </td>
         </tr>
         <tr>
@@ -349,7 +447,20 @@
         </tr>
         <tr>
             <td class="abstract">
-                Forecasting the Consumer Price Index (CPI) is an important yet challenging task in economics, where most existing approaches rely on low-frequency, survey-based data. With the recent advances of large language models (LLMs), there is growing potential to leverage high-frequency online text data for improved CPI prediction, an area still largely unexplored. This paper proposes LLM-CPI, an LLM-based approach for CPI prediction inference incorporating online text time series. We collect a large set of high-frequency online texts from a popularly used Chinese social network site and employ LLMs such as ChatGPT and the trained BERT models to construct continuous inflation labels for posts that are related to inflation. Online text embeddings are extracted via LDA and BERT. We develop a joint time series framework that combines monthly CPI data with LLM-generated daily CPI surrogates. The monthly model employs an ARX structure combining observed CPI data with text embeddings and macroeconomic variables, while the daily model uses a VARX structure built on LLM-generated CPI surrogates and text embeddings. We establish the asymptotic properties of the method and provide two forms of constructed prediction intervals. The finite-sample performance and practical advantages of LLM-CPI are demonstrated through both simulation and real data examples. This is a joint work with Yingying Fan, Ao Sun and Yurou Wang.
+                Forecasting the Consumer Price Index (CPI) is an important yet challenging task in economics, where most
+                existing approaches rely on low-frequency, survey-based data. With the recent advances of large language
+                models (LLMs), there is growing potential to leverage high-frequency online text data for improved CPI
+                prediction, an area still largely unexplored. This paper proposes LLM-CPI, an LLM-based approach for CPI
+                prediction inference incorporating online text time series. We collect a large set of high-frequency
+                online texts from a popularly used Chinese social network site and employ LLMs such as ChatGPT and the
+                trained BERT models to construct continuous inflation labels for posts that are related to inflation.
+                Online text embeddings are extracted via LDA and BERT. We develop a joint time series framework that
+                combines monthly CPI data with LLM-generated daily CPI surrogates. The monthly model employs an ARX
+                structure combining observed CPI data with text embeddings and macroeconomic variables, while the daily
+                model uses a VARX structure built on LLM-generated CPI surrogates and text embeddings. We establish the
+                asymptotic properties of the method and provide two forms of constructed prediction intervals. The
+                finite-sample performance and practical advantages of LLM-CPI are demonstrated through both simulation
+                and real data examples. This is a joint work with Yingying Fan, Ao Sun and Yurou Wang.
             </td>
         </tr>
     </table>
@@ -357,10 +468,10 @@
     <table id="Song Liu">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Guiding Time-Varying Generative Models with Natural Gradients on Exponential Family Manifold 
+                Guiding Time-Varying Generative Models with Natural Gradients on Exponential Family Manifold
             </td>
         </tr>
         <tr>
@@ -370,7 +481,17 @@
         </tr>
         <tr>
             <td class="abstract">
-                Optimising probabilistic models is a well-studied field in statistics. However, its connection with the training of generative models remains largely under-explored. In this paper, we show that the evolution of time-varying generative models can be projected onto an exponential family manifold, naturally creating a link between the parameters of a generative model and those of a probabilistic model. We then train the generative model by moving its projection on the manifold according to the natural gradient descent scheme. This approach also allows us to efficiently approximate the natural gradient of the KL divergence without relying on MCMC for intractable models. Furthermore, we propose particle versions of the algorithm, which feature closed-form update rules for any parametric model within the exponential family. Through toy and real-world experiments, we validate the effectiveness of the proposed algorithms. The code of the proposed algorithms can be found <a href="https://github.com/anewgithubname/iNGD">here</a>.
+                Optimising probabilistic models is a well-studied field in statistics. However, its connection with the
+                training of generative models remains largely under-explored. In this paper, we show that the evolution
+                of time-varying generative models can be projected onto an exponential family manifold, naturally
+                creating a link between the parameters of a generative model and those of a probabilistic model. We then
+                train the generative model by moving its projection on the manifold according to the natural gradient
+                descent scheme. This approach also allows us to efficiently approximate the natural gradient of the KL
+                divergence without relying on MCMC for intractable models. Furthermore, we propose particle versions of
+                the algorithm, which feature closed-form update rules for any parametric model within the exponential
+                family. Through toy and real-world experiments, we validate the effectiveness of the proposed
+                algorithms. The code of the proposed algorithms can be found <a
+                    href="https://github.com/anewgithubname/iNGD">here</a>.
 
             </td>
         </tr>
@@ -379,7 +500,7 @@
     <!-- <table id="Ali Shojaie">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+                
             </td>
             <td class="title">
                 GLM Inference with AI-Generated Synthetic Data Using Misspecified Linear Regression 
@@ -400,10 +521,10 @@
     <table id="Tian Zheng">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Learning the Climate System: Workflows that Connect Physics, Data, and Machine Learning 
+                Learning the Climate System: Workflows that Connect Physics, Data, and Machine Learning
             </td>
         </tr>
         <tr>
@@ -413,7 +534,16 @@
         </tr>
         <tr>
             <td class="abstract">
-                Machine learning is increasingly used in climate modeling to support system emulation, parameter inference, forecasting, and scientific discovery, addressing challenges such as physical consistency, multi-scale coupling, data sparsity, and integration with existing workflows. In this talk, I will present a series of applied case studies focused on workflow design in climate ML, including surrogate modeling, ML-based parameterization, equation discovery from high-fidelity simulations, probabilistic programming for parameter inference, simulation-based inference in remote sensing, subseasonal forecasting, and physics-informed transfer learning. These examples highlight how ML workflows can be grounded in physical knowledge, shaped by simulation data, and designed to incorporate real-world observations. By unpacking these workflows and their design choices, I will discuss open challenges in building transparent, adaptable, and reproducible ML systems for climate science.
+                Machine learning is increasingly used in climate modeling to support system emulation, parameter
+                inference, forecasting, and scientific discovery, addressing challenges such as physical consistency,
+                multi-scale coupling, data sparsity, and integration with existing workflows. In this talk, I will
+                present a series of applied case studies focused on workflow design in climate ML, including surrogate
+                modeling, ML-based parameterization, equation discovery from high-fidelity simulations, probabilistic
+                programming for parameter inference, simulation-based inference in remote sensing, subseasonal
+                forecasting, and physics-informed transfer learning. These examples highlight how ML workflows can be
+                grounded in physical knowledge, shaped by simulation data, and designed to incorporate real-world
+                observations. By unpacking these workflows and their design choices, I will discuss open challenges in
+                building transparent, adaptable, and reproducible ML systems for climate science.
             </td>
         </tr>
     </table>
@@ -421,10 +551,10 @@
     <table id="Francesco Orabona">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                State-of-the-art Confidence Intervals and Confidence Sequences through Testing-by-Betting Algorithms 
+                State-of-the-art Confidence Intervals and Confidence Sequences through Testing-by-Betting Algorithms
             </td>
         </tr>
         <tr>
@@ -434,7 +564,16 @@
         </tr>
         <tr>
             <td class="abstract">
-                We consider the problem of constructing optimal confidence intervals and confidence sequences for the mean of a bounded random variable, a key problem in statistics and machine learning when sampling is costly. All the traditional methods, like Hoeffding’s, Bernstein’s, and the Law-of-Iterated-Logarithm (LIL) bounds, while asymptotically optimal, have disappointing performance in the small sample regime. Here, we present the current state-of-the-art approaches for both problems, based on the testing-by-betting framework by Shafer&Vovk. The first one is based on the betting strategy used by the Universal Portfolio Algorithm (Cover and Ordentlich, 1996) and obtains the first never-vacuous confidence sequences satisfying the LIL bound. The second one is a new dynamic betting algorithm that explicitly takes into account the time horizon to achieve the theoretically and numerically tightest confidence intervals.
+                We consider the problem of constructing optimal confidence intervals and confidence sequences for the
+                mean of a bounded random variable, a key problem in statistics and machine learning when sampling is
+                costly. All the traditional methods, like Hoeffding’s, Bernstein’s, and the Law-of-Iterated-Logarithm
+                (LIL) bounds, while asymptotically optimal, have disappointing performance in the small sample regime.
+                Here, we present the current state-of-the-art approaches for both problems, based on the
+                testing-by-betting framework by Shafer&Vovk. The first one is based on the betting strategy used by the
+                Universal Portfolio Algorithm (Cover and Ordentlich, 1996) and obtains the first never-vacuous
+                confidence sequences satisfying the LIL bound. The second one is a new dynamic betting algorithm that
+                explicitly takes into account the time horizon to achieve the theoretically and numerically tightest
+                confidence intervals.
             </td>
         </tr>
     </table>
@@ -442,10 +581,10 @@
     <table id="Rob Hyndman">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Anomaly detection using surprisals 
+                Anomaly detection using surprisals
             </td>
         </tr>
         <tr>
@@ -455,7 +594,15 @@
         </tr>
         <tr>
             <td class="abstract">
-                I will discuss a probabilistic approach to anomaly detection based on extreme "surprisal values" aka log scores, equal to minus the log density at each observation. The surprisal approach can be used for any collection of data objects, provided a probability density can be defined on the sample space. It can distinguish anomalies from legitimate observations in a heavy tail, and will identify anomalies that are undetected using methods based on distance measures. I will demonstrate the idea in various real data examples including univariate, multivariate and regression contexts, and when exploring more complicated data objects. I will also briefly outline the underlying theory when the density is known, and when it is estimated using a kernel density estimate. In the latter case, an innovative bandwidth selection method is used based on persistent homology.
+                I will discuss a probabilistic approach to anomaly detection based on extreme "surprisal values" aka log
+                scores, equal to minus the log density at each observation. The surprisal approach can be used for any
+                collection of data objects, provided a probability density can be defined on the sample space. It can
+                distinguish anomalies from legitimate observations in a heavy tail, and will identify anomalies that are
+                undetected using methods based on distance measures. I will demonstrate the idea in various real data
+                examples including univariate, multivariate and regression contexts, and when exploring more complicated
+                data objects. I will also briefly outline the underlying theory when the density is known, and when it
+                is estimated using a kernel density estimate. In the latter case, an innovative bandwidth selection
+                method is used based on persistent homology.
             </td>
         </tr>
     </table>
@@ -463,10 +610,10 @@
     <table id="Alexandre Tsybakov">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Conversion theorem and minimax optimality for continuum contextual bandits 
+                Conversion theorem and minimax optimality for continuum contextual bandits
             </td>
         </tr>
         <tr>
@@ -476,7 +623,19 @@
         </tr>
         <tr>
             <td class="abstract">
-                Abstract: We study the continuum contextual bandit problem, where the learner sequentially receives a side information vector (a context) and has to choose an action in a convex set, minimizing a function depending on the context. The goal is to minimize the dynamic contextual regret, which provides a stronger guarantee than the standard static regret. We propose a meta-algorithm that to any input non-contextual bandit algorithm associates an output contextual bandit algorithm, and we prove a conversion theorem, which allows one to derive a bound on the contextual regret from the static regret of the input algorithm. We apply this strategy to obtain upper bounds on the contextual regret in several major settings (losses that are Lipschitz, convex and Lipschitz, strongly convex and smooth with respect to the action variable). Inspired by the interior point method and employing self-concordant barriers, we propose an algorithm achieving a sub-linear contextual regret for strongly convex and smooth functions in noisy setting. We show that it achieves, up to a logarithmic factor, the minimax optimal rate of the contextual regret as a function of the number of queries. Joint work with Arya Akhavan, Karim Lounici and Massi Pontil.
+                Abstract: We study the continuum contextual bandit problem, where the learner sequentially receives a
+                side information vector (a context) and has to choose an action in a convex set, minimizing a function
+                depending on the context. The goal is to minimize the dynamic contextual regret, which provides a
+                stronger guarantee than the standard static regret. We propose a meta-algorithm that to any input
+                non-contextual bandit algorithm associates an output contextual bandit algorithm, and we prove a
+                conversion theorem, which allows one to derive a bound on the contextual regret from the static regret
+                of the input algorithm. We apply this strategy to obtain upper bounds on the contextual regret in
+                several major settings (losses that are Lipschitz, convex and Lipschitz, strongly convex and smooth with
+                respect to the action variable). Inspired by the interior point method and employing self-concordant
+                barriers, we propose an algorithm achieving a sub-linear contextual regret for strongly convex and
+                smooth functions in noisy setting. We show that it achieves, up to a logarithmic factor, the minimax
+                optimal rate of the contextual regret as a function of the number of queries. Joint work with Arya
+                Akhavan, Karim Lounici and Massi Pontil.
             </td>
         </tr>
     </table>
@@ -484,10 +643,10 @@
     <table id="Yao Zhang">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Adaptive sample splitting for randomization tests 
+                Adaptive sample splitting for randomization tests
             </td>
         </tr>
         <tr>
@@ -497,7 +656,19 @@
         </tr>
         <tr>
             <td class="abstract">
-                Randomization tests are widely used to generate finite-sample valid p-values for causal inference on experimental data. However, when applied to subgroup analysis, these tests may lack power due to small subgroup sizes. Incorporating a shared estimator of the conditional average treatment effect (CATE) can substantially improve power across subgroups but requires sample splitting to preserve validity. To this end, we quantify each unit's contribution to estimation and testing using a certainty score, which measures how certain the unit's treatment assignment is given its covariates and outcome. We show that units with higher certainty scores are more valuable for testing but less important for CATE estimation, since their treatment assignments can be accurately imputed. Building on this insight, we propose AdaSplit, a sample-splitting procedure that adaptively allocates units between estimation and testing to maximize their overall contribution across tasks. We evaluate AdaSplit through simulation studies, demonstrating that it yields more powerful randomization tests than baselines that omit CATE estimation or rely on random sample-splitting. Finally, we apply AdaSplit to a blood pressure intervention trial, identifying patient subgroups with significant treatment effects. This is a joint work with Zijun Gao.
+                Randomization tests are widely used to generate finite-sample valid p-values for causal inference on
+                experimental data. However, when applied to subgroup analysis, these tests may lack power due to small
+                subgroup sizes. Incorporating a shared estimator of the conditional average treatment effect (CATE) can
+                substantially improve power across subgroups but requires sample splitting to preserve validity. To this
+                end, we quantify each unit's contribution to estimation and testing using a certainty score, which
+                measures how certain the unit's treatment assignment is given its covariates and outcome. We show that
+                units with higher certainty scores are more valuable for testing but less important for CATE estimation,
+                since their treatment assignments can be accurately imputed. Building on this insight, we propose
+                AdaSplit, a sample-splitting procedure that adaptively allocates units between estimation and testing to
+                maximize their overall contribution across tasks. We evaluate AdaSplit through simulation studies,
+                demonstrating that it yields more powerful randomization tests than baselines that omit CATE estimation
+                or rely on random sample-splitting. Finally, we apply AdaSplit to a blood pressure intervention trial,
+                identifying patient subgroups with significant treatment effects. This is a joint work with Zijun Gao.
             </td>
         </tr>
     </table>
@@ -505,10 +676,10 @@
     <table id="Yingying Fan">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Asymptotic FDR control with Model-X knockoffs: is moments matching sufficient? 
+                Asymptotic FDR control with Model-X knockoffs: is moments matching sufficient?
             </td>
         </tr>
         <tr>
@@ -518,7 +689,19 @@
         </tr>
         <tr>
             <td class="abstract">
-                We propose a unified theoretical framework for studying the robustness of the Model-X knockoffs framework by investigating the asymptotic false discovery rate (FDR) control of the practically implemented approximate knockoffs procedure. This procedure deviates from the Model-X knockoffs framework by substituting the true covariate distribution with a user-specified distribution that can be learned using in-sample observations. By replacing the distributional exchangeability condition of the Model-X knockoff variables with three conditions on the approximate knockoff statistics, we establish that the approximate knockoffs procedure achieves the asymptotic FDR control. Using our unified framework, we further prove that an arguably most popularly used knockoff variable generation method&mdash;the Gaussian knockoffs generator based on the first two moments matching&mdash;achieves the asymptotic FDR control when the two-moment-based knockoff statistics are employed in the knockoffs inference procedure. For the first time in the literature, our theoretical results justify formally the effectiveness and robustness of the Gaussian knockoffs generator. Simulation and real data examples are conducted to validate the theoretical findings.
+                We propose a unified theoretical framework for studying the robustness of the Model-X knockoffs
+                framework by investigating the asymptotic false discovery rate (FDR) control of the practically
+                implemented approximate knockoffs procedure. This procedure deviates from the Model-X knockoffs
+                framework by substituting the true covariate distribution with a user-specified distribution that can be
+                learned using in-sample observations. By replacing the distributional exchangeability condition of the
+                Model-X knockoff variables with three conditions on the approximate knockoff statistics, we establish
+                that the approximate knockoffs procedure achieves the asymptotic FDR control. Using our unified
+                framework, we further prove that an arguably most popularly used knockoff variable generation
+                method&mdash;the Gaussian knockoffs generator based on the first two moments matching&mdash;achieves the
+                asymptotic FDR control when the two-moment-based knockoff statistics are employed in the knockoffs
+                inference procedure. For the first time in the literature, our theoretical results justify formally the
+                effectiveness and robustness of the Gaussian knockoffs generator. Simulation and real data examples are
+                conducted to validate the theoretical findings.
             </td>
         </tr>
     </table>
@@ -526,10 +709,10 @@
     <table id="Zhenhua Lin">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Statistical Inference for High-Dimensional and Functional Data via Bootstrapping 
+                Statistical Inference for High-Dimensional and Functional Data via Bootstrapping
             </td>
         </tr>
         <tr>
@@ -539,7 +722,13 @@
         </tr>
         <tr>
             <td class="abstract">
-                Statistical inference in high-dimensional and functional settings is both central and challenging. We develop a set of bootstrap-based procedures for common inferential tasks, including high-dimensional analysis of variance, two-sample homogeneity testing, and hypothesis tests for the mean function and for the slope function in functional linear models. We establish asymptotic validity and consistency of the proposed methods and derive their convergence rates. As a by-product, we uncover a theoretical distinction between FPCA-based estimation and inference for the slope function. Numerical studies show accurate type-I error control and competitive power, especially with limited samples and weak signals.
+                Statistical inference in high-dimensional and functional settings is both central and challenging. We
+                develop a set of bootstrap-based procedures for common inferential tasks, including high-dimensional
+                analysis of variance, two-sample homogeneity testing, and hypothesis tests for the mean function and for
+                the slope function in functional linear models. We establish asymptotic validity and consistency of the
+                proposed methods and derive their convergence rates. As a by-product, we uncover a theoretical
+                distinction between FPCA-based estimation and inference for the slope function. Numerical studies show
+                accurate type-I error control and competitive power, especially with limited samples and weak signals.
             </td>
         </tr>
     </table>
@@ -547,10 +736,10 @@
     <table id="Edgar Dobriban">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Leveraging synthetic data in statistical inference 
+                Leveraging synthetic data in statistical inference
             </td>
         </tr>
         <tr>
@@ -560,7 +749,15 @@
         </tr>
         <tr>
             <td class="abstract">
-                Synthetic data, for instance generated by foundation models, may offer great opportunities to boost sample sizes in statistical analysis. However, the distribution of synthetic data may not be exactly the same as that of the real data, thus incurring the risk of faulty inferences. Motivated by these observations, we study how to use synthetic or auxiliary data in statistical inference problems ranging from predictive inference (conformal prediction) to hypothesis testing. We develop methods that are able to leverage synthetic or auxiliary data in addition to real data. If the synthetic data distribution is similar to that of the real data, our methods improve precision. At the same time, our methods maintain a guardrail level of coverage even if the synthetic data distribution is arbitrarily bad. We illustrate our methods with a variety of examples ranging from AI to the medical domain.
+                Synthetic data, for instance generated by foundation models, may offer great opportunities to boost
+                sample sizes in statistical analysis. However, the distribution of synthetic data may not be exactly the
+                same as that of the real data, thus incurring the risk of faulty inferences. Motivated by these
+                observations, we study how to use synthetic or auxiliary data in statistical inference problems ranging
+                from predictive inference (conformal prediction) to hypothesis testing. We develop methods that are able
+                to leverage synthetic or auxiliary data in addition to real data. If the synthetic data distribution is
+                similar to that of the real data, our methods improve precision. At the same time, our methods maintain
+                a guardrail level of coverage even if the synthetic data distribution is arbitrarily bad. We illustrate
+                our methods with a variety of examples ranging from AI to the medical domain.
             </td>
         </tr>
     </table>
@@ -568,10 +765,10 @@
     <table id="Emilio Porcu">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Random Fields on Dynamic Metric Graphs 
+                Random Fields on Dynamic Metric Graphs
             </td>
         </tr>
         <tr>
@@ -581,7 +778,19 @@
         </tr>
         <tr>
             <td class="abstract">
-                We consider the problem of time-evolving generalised networks, where (i) the edges connecting the nodes are nonlinear, (ii) stochastic processes are continuously indexed over both vertices and edges and (iii) the topology is allowed to change over time, that is: vertices and edges can disappear at subsequent time instants and edges may change in shape and length. Topological structures satisfying (i) and (ii) are usually represented through special classes of metric graphs, termed graphs with Euclidean edges. We build a rigorous mathematical and statistical framework for time-evolving networks. We consider both cases of linear and circular time, where, for the latter, the generalised network exhibits a periodic structure. Our findings allow to illustrate pros and cons of each setting. Our approach allows to build proper semi-distances for the temporally-evolving topological structures of the networks. Generalised networks become semi-distance spaces whenever equipped with semi-distances. Our final effort is then devoted to guiding the reader through the appropriate choice of classes of functions that allow to build random fields on the time-evolving networks, via their kernels, that are composed with the temporally-evolving semi-distances topological structure.
+                We consider the problem of time-evolving generalised networks, where (i) the edges connecting the nodes
+                are nonlinear, (ii) stochastic processes are continuously indexed over both vertices and edges and (iii)
+                the topology is allowed to change over time, that is: vertices and edges can disappear at subsequent
+                time instants and edges may change in shape and length. Topological structures satisfying (i) and (ii)
+                are usually represented through special classes of metric graphs, termed graphs with Euclidean edges. We
+                build a rigorous mathematical and statistical framework for time-evolving networks. We consider both
+                cases of linear and circular time, where, for the latter, the generalised network exhibits a periodic
+                structure. Our findings allow to illustrate pros and cons of each setting. Our approach allows to build
+                proper semi-distances for the temporally-evolving topological structures of the networks. Generalised
+                networks become semi-distance spaces whenever equipped with semi-distances. Our final effort is then
+                devoted to guiding the reader through the appropriate choice of classes of functions that allow to build
+                random fields on the time-evolving networks, via their kernels, that are composed with the
+                temporally-evolving semi-distances topological structure.
             </td>
         </tr>
     </table>
@@ -589,10 +798,10 @@
     <table id="Nikita Zhivotovskiy">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                From Hypothesis Testing to Distribution Estimation 
+                From Hypothesis Testing to Distribution Estimation
             </td>
         </tr>
         <tr>
@@ -602,7 +811,12 @@
         </tr>
         <tr>
             <td class="abstract">
-                Distinguishing between two distributions based on observed data is a classical problem in statistics and machine learning. But what if we aim to go further—not just test, but actually estimate a distribution close to the true one in, say, Kullback-Leibler divergence? Can we do this knowing only that the true distribution lies in a known class, without structural assumptions on the individual densities? In this talk, I will review classical results and present recent developments on this question. The focus will be on high-probability error bounds that are optimal up to constants in this general setting.
+                Distinguishing between two distributions based on observed data is a classical problem in statistics and
+                machine learning. But what if we aim to go further—not just test, but actually estimate a distribution
+                close to the true one in, say, Kullback-Leibler divergence? Can we do this knowing only that the true
+                distribution lies in a known class, without structural assumptions on the individual densities? In this
+                talk, I will review classical results and present recent developments on this question. The focus will
+                be on high-probability error bounds that are optimal up to constants in this general setting.
             </td>
         </tr>
     </table>
@@ -610,10 +824,10 @@
     <table id="Anthony Ozerov">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                PCS uncertainty quantification for regression and classification 
+                PCS uncertainty quantification for regression and classification
             </td>
         </tr>
         <tr>
@@ -623,7 +837,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                Trustworthy uncertainty quantification (UQ) is required for good, safe decision-making when using machine learning models. We discuss new UQ methods for regression and classification under the Predictability-Computability-Stability framework. This involves (1) training different models on the same dataset, (2) screening out those which make poor predictions, (3) creating a bootstrap ensemble, and (4) using calibration data to create prediction intervals or sets achieving a specified coverage level. By combining model selection (screening), uncertainty due to model misspecification and noise (ensembling), and calibration, we obtain predictions on real datasets which are sharper (narrower intervals or smaller sets) and more adaptive to data subgroups than standard one-model conformal prediction. Finally, we discuss one challenge that arose in this work: how to evaluate prediction sets in classification, balancing sharpness and adaptivity. Drawing from well-known scoring rules for probabilistic predictions, we propose new evaluation metrics for prediction sets and show how they can be used to choose between or tune prediction algorithms.
+                Trustworthy uncertainty quantification (UQ) is required for good, safe decision-making when using
+                machine learning models. We discuss new UQ methods for regression and classification under the
+                Predictability-Computability-Stability framework. This involves (1) training different models on the
+                same dataset, (2) screening out those which make poor predictions, (3) creating a bootstrap ensemble,
+                and (4) using calibration data to create prediction intervals or sets achieving a specified coverage
+                level. By combining model selection (screening), uncertainty due to model misspecification and noise
+                (ensembling), and calibration, we obtain predictions on real datasets which are sharper (narrower
+                intervals or smaller sets) and more adaptive to data subgroups than standard one-model conformal
+                prediction. Finally, we discuss one challenge that arose in this work: how to evaluate prediction sets
+                in classification, balancing sharpness and adaptivity. Drawing from well-known scoring rules for
+                probabilistic predictions, we propose new evaluation metrics for prediction sets and show how they can
+                be used to choose between or tune prediction algorithms.
             </td>
         </tr>
     </table>
@@ -631,10 +856,10 @@
     <table id="Xin Tong">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                LLM predisposition 
+                LLM predisposition
             </td>
         </tr>
         <tr>
@@ -644,7 +869,10 @@
         </tr>
         <tr>
             <td class="abstract">
-                We study the faithfulness of LLM-mediated communication by modeling it as a generation-summarization process. Using a novel experimental framework and an adapted benchmark dataset, we introduce a quantitative metric to evaluate faithfulness. Our results reveal significant information distortion in current LLM-mediated communication.
+                We study the faithfulness of LLM-mediated communication by modeling it as a generation-summarization
+                process. Using a novel experimental framework and an adapted benchmark dataset, we introduce a
+                quantitative metric to evaluate faithfulness. Our results reveal significant information distortion in
+                current LLM-mediated communication.
             </td>
         </tr>
     </table>
@@ -652,10 +880,10 @@
     <table id="Amit Sharma">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                New Statistical Questions in the Age of Large Language Models 
+                New Statistical Questions in the Age of Large Language Models
             </td>
         </tr>
         <tr>
@@ -665,7 +893,21 @@
         </tr>
         <tr>
             <td class="abstract">
-                Statistical analysis has long relied on a division of labor: domain knowledge is provided by subject-matter experts, while inference is guided by formal statistical methods. Large language models (LLMs) blur this boundary by generating domain knowledge–like priors for a problem, offering new opportunities and statistical challenges. I will first demonstrate how LLMs can propose causal mechanisms across fields such as medicine and environmental science, suggest candidate variables, functional forms, and even robustness checks. Unlike expert knowledge, however, LLM-derived priors cannot be assumed valid—they introduce new, structured but unpredictable forms of error. <br> This motivates a broader statistical question: what would end-to-end inference look like in an LLM-assisted regime? For example, in causal effect estimation, LLMs may provide distributions over causal graphs that can then be used for effect estimation; conversely, given an effect, they may help check or refine the assumptions. Extending this idea, we arrive at the possibility of inference pipelines that move directly from a scientific question to study design to parameter estimation with LLM input at each stage. Such workflows raise new statistical challenges, including how to construct confidence intervals, quantify uncertainty, and calibrate inference when part of the prior comes from an unreliable but informative model. The talk will motivate these open problems with real-world case studies.
+                Statistical analysis has long relied on a division of labor: domain knowledge is provided by
+                subject-matter experts, while inference is guided by formal statistical methods. Large language models
+                (LLMs) blur this boundary by generating domain knowledge–like priors for a problem, offering new
+                opportunities and statistical challenges. I will first demonstrate how LLMs can propose causal
+                mechanisms across fields such as medicine and environmental science, suggest candidate variables,
+                functional forms, and even robustness checks. Unlike expert knowledge, however, LLM-derived priors
+                cannot be assumed valid—they introduce new, structured but unpredictable forms of error. <br> This
+                motivates a broader statistical question: what would end-to-end inference look like in an LLM-assisted
+                regime? For example, in causal effect estimation, LLMs may provide distributions over causal graphs that
+                can then be used for effect estimation; conversely, given an effect, they may help check or refine the
+                assumptions. Extending this idea, we arrive at the possibility of inference pipelines that move directly
+                from a scientific question to study design to parameter estimation with LLM input at each stage. Such
+                workflows raise new statistical challenges, including how to construct confidence intervals, quantify
+                uncertainty, and calibrate inference when part of the prior comes from an unreliable but informative
+                model. The talk will motivate these open problems with real-world case studies.
             </td>
         </tr>
     </table>
@@ -673,10 +915,10 @@
     <table id="Mathias Drton">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Causal Modeling with Stationary Processes 
+                Causal Modeling with Stationary Processes
             </td>
         </tr>
         <tr>
@@ -686,7 +928,12 @@
         </tr>
         <tr>
             <td class="abstract">
-                The ultimate aim of many data analyses is to infer cause-and-effect relationships between random variables of interest. While much of the available methodology for addressing causal questions relies on structural causal models, these models are best suited for systems without feedback loops. Extensions to accommodate feedback have been proposed, but often result in models that are challenging to interpret. In this lecture, we present an alternative approach to graphical causal modeling that considers stationary distributions of multivariate diffusion processes.
+                The ultimate aim of many data analyses is to infer cause-and-effect relationships between random
+                variables of interest. While much of the available methodology for addressing causal questions relies on
+                structural causal models, these models are best suited for systems without feedback loops. Extensions to
+                accommodate feedback have been proposed, but often result in models that are challenging to interpret.
+                In this lecture, we present an alternative approach to graphical causal modeling that considers
+                stationary distributions of multivariate diffusion processes.
             </td>
         </tr>
     </table>
@@ -694,10 +941,10 @@
     <table id="Peter Buhlmann">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Causality-Inspired Distributional Robustness for Nonlinear Models 
+                Causality-Inspired Distributional Robustness for Nonlinear Models
             </td>
         </tr>
         <tr>
@@ -707,7 +954,11 @@
         </tr>
         <tr>
             <td class="abstract">
-                Distributional robustness is a central challenge in predictive modeling, as real-world data often exhibit substantial distribution shifts across environments. Causality offers a principled framework for modeling such distributional perturbations, enabling rigorous guarantees of robustness in nonlinear models through representation learning. We will discuss the framework and its theoretical foundations, and illustrate its applications in perturbation genomics and medical domain adaptation.
+                Distributional robustness is a central challenge in predictive modeling, as real-world data often
+                exhibit substantial distribution shifts across environments. Causality offers a principled framework for
+                modeling such distributional perturbations, enabling rigorous guarantees of robustness in nonlinear
+                models through representation learning. We will discuss the framework and its theoretical foundations,
+                and illustrate its applications in perturbation genomics and medical domain adaptation.
             </td>
         </tr>
     </table>
@@ -715,10 +966,11 @@
     <table id="Antonietta Mira">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                From Intrinsic Dimension to Information Imbalance: Nearest-Neighbor Methods for Dimensionality Reduction, Nonparametric Variable Selection, and Causal Discovery 
+                From Intrinsic Dimension to Information Imbalance: Nearest-Neighbor Methods for Dimensionality
+                Reduction, Nonparametric Variable Selection, and Causal Discovery
             </td>
         </tr>
         <tr>
@@ -728,7 +980,18 @@
         </tr>
         <tr>
             <td class="abstract">
-                This talk presents recent advances in nearest-neighbor methods for understanding complex, high-dimensional data. In the first part, we focus on intrinsic dimension (ID), a simple yet powerful descriptor that reveals the effective number of degrees of freedom in a dataset. We show how ID can be estimated adaptively, self-consistently determining both the optimal scale of analysis and the number of variables required to describe the data without significant information loss. Moreover, different IDs may coexist within the same dataset, pointing to subsets of points lying on distinct manifolds and naturally yielding a clustering of the data. Applications range from gene expression and protein folding to pandemic evolution, fMRI, finance, and network data. In the second part, we introduce the concept of information imbalance (II) and its differentiable extension (DII), which provide nonparametric measures of variable informativeness and causal directionality. Applications to synthetic and real-world datasets, including the EU Emission Trading System, highlight the potential of this framework for dimensionality reduction, variable selection, and causal discovery.
+                This talk presents recent advances in nearest-neighbor methods for understanding complex,
+                high-dimensional data. In the first part, we focus on intrinsic dimension (ID), a simple yet powerful
+                descriptor that reveals the effective number of degrees of freedom in a dataset. We show how ID can be
+                estimated adaptively, self-consistently determining both the optimal scale of analysis and the number of
+                variables required to describe the data without significant information loss. Moreover, different IDs
+                may coexist within the same dataset, pointing to subsets of points lying on distinct manifolds and
+                naturally yielding a clustering of the data. Applications range from gene expression and protein folding
+                to pandemic evolution, fMRI, finance, and network data. In the second part, we introduce the concept of
+                information imbalance (II) and its differentiable extension (DII), which provide nonparametric measures
+                of variable informativeness and causal directionality. Applications to synthetic and real-world
+                datasets, including the EU Emission Trading System, highlight the potential of this framework for
+                dimensionality reduction, variable selection, and causal discovery.
             </td>
         </tr>
     </table>
@@ -736,10 +999,10 @@
     <table id="Sonia Petrone">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Bayesian predictive-based uncertainty quantification 
+                Bayesian predictive-based uncertainty quantification
             </td>
         </tr>
         <tr>
@@ -749,7 +1012,17 @@
         </tr>
         <tr>
             <td class="abstract">
-                In the rapid evolution of Statistics and AI,  we still feel a tension between the “two cultures” - classic statistical inference versus algorithmic prediction. The Bayesian approach has prediction in its foundations, and may naturally combine both cultures. In a Bayesian predictive approach, one directly reasons on prediction of future observations, bypassing models and parameters, or possibly using them implicitly.  In a nutshell, while Statistics traditionally goes from inference to prediction, here one goes from prediction to inference. This approach allows us to regard predictive algorithms - computationally convenient approximations of exact Bayesian solutions, or black-box predictive engines - as Bayesian predictive learning rules, and to provide them with full Bayesian uncertainty quantification. In the talk, I will review basic concepts and recent results, and discuss ongoing directions, such as calibrating the predictive rule for predictive ‘efficiency’ and good inferential properties.
+                In the rapid evolution of Statistics and AI, we still feel a tension between the “two cultures” -
+                classic statistical inference versus algorithmic prediction. The Bayesian approach has prediction in its
+                foundations, and may naturally combine both cultures. In a Bayesian predictive approach, one directly
+                reasons on prediction of future observations, bypassing models and parameters, or possibly using them
+                implicitly. In a nutshell, while Statistics traditionally goes from inference to prediction, here one
+                goes from prediction to inference. This approach allows us to regard predictive algorithms -
+                computationally convenient approximations of exact Bayesian solutions, or black-box predictive engines -
+                as Bayesian predictive learning rules, and to provide them with full Bayesian uncertainty
+                quantification. In the talk, I will review basic concepts and recent results, and discuss ongoing
+                directions, such as calibrating the predictive rule for predictive ‘efficiency’ and good inferential
+                properties.
             </td>
         </tr>
     </table>
@@ -757,10 +1030,10 @@
     <table id="Judith Rousseau">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Nonparametric multivariate Hawkes processes in high dimensions 
+                Nonparametric multivariate Hawkes processes in high dimensions
             </td>
         </tr>
         <tr>
@@ -770,16 +1043,37 @@
         </tr>
         <tr>
             <td class="abstract">
-                Multivariate Hawkes processes form a class of point processes describing self and inter exciting/inhibiting processes. There is now a renewed interest of such processes in applied domains and in machine learning, but there exists only limited theory about inference in such models apart from parametric models. After reviewing results on convergence rates for Bayesian nonparametric approaches to such models, when the dimension K of the process is fixed, I will present some new results on Estimation when K is large. <br>
-                To be more precise, the intensity function of a linear Hawkes process has the following form: for each dimension \(k \leq K\) <br>
-                \[\lambda^k(t) = \sum_{\ell \leq K} \int_{0}^{t^-} h_{\ell k}(t-s) dN_s^{\ell} + \nu_k, 
+                Multivariate Hawkes processes form a class of point processes describing self and inter
+                exciting/inhibiting processes. There is now a renewed interest of such processes in applied domains and
+                in machine learning, but there exists only limited theory about inference in such models apart from
+                parametric models. After reviewing results on convergence rates for Bayesian nonparametric approaches to
+                such models, when the dimension K of the process is fixed, I will present some new results on Estimation
+                when K is large. <br>
+                To be more precise, the intensity function of a linear Hawkes process has the following form: for each
+                dimension \(k \leq K\) <br>
+                \[\lambda^k(t) = \sum_{\ell \leq K} \int_{0}^{t^-} h_{\ell k}(t-s) dN_s^{\ell} + \nu_k,
                 \quad t \in [0, T]\]
-                where \(N^{\ell}, \ell \leq K\) is the Hawkes process, \(\nu_k \ge 0\) and \(h_{\ell k} \geq 0\). The parameters are the functions \(h_{\ell k}\) and the constants \(\nu_k\), with \(\ell, k \in [K]\).<br>
-                Estimation of \(\nu, h\) when \(K\) is allowed to grow with \(T\) has attracted recently some interest under sparsity assumptions, i.e. assuming that for each \(k\) only a small number \(s_0\) of functions \(h_{\ell k}\) can be non-null. However, only partial results on the estimation o the parameters have been derived. <br>
-                In this talk I will show that under sparsity (on \(s_0\)) and stationarity assumptions it is possible to estimate nonparametrically the \(K\) background rates \(\nu_k\) and the \(K_2\) interaction functions \(h_{\ell k}\) when \(K\) is allowed to grow with \(T\) exponentially. <br>
-                I will provide results under the empirical \(L_1\) loss on the intensity functions and on the direct \(L_1\) loss on the parameters. <br> 
-                I will propose a two-step procedure which allows for the estimation of the parameters at a rate which is not impacted by \(K\) even for very large \(K\)’s. <br> 
-                I will also explain for finite \(K\) the specificities for deriving efficient semi-parametric theory in these models, corresponding to the fact that we allow the functions \(h_{\ell k}\) to be equal to 0; I will then provide conditions for verifying the semiparametric Bernstein von Mises property on functionals in the form \(\Psi(\nu, h) = \Psi(\nu)\) or \(\Psi(\nu, h) = \Psi(h)\), where \(\Psi\) is smooth. I will apply these results to the functionals \(\Psi(\nu, h) = \nu\) and \(\Psi(\nu, h) = \int h_{\ell k}(x)dx\) and deduce from these a sharp result on the estimation of the graph of interaction. The latter is defined as the adjacency matrix \(\Delta\) where \(\delta_{\ell k} = 1\) if and only if \(\rho_{\ell k} = \int h_{\ell k}(x)dx \ge 0\).
+                where \(N^{\ell}, \ell \leq K\) is the Hawkes process, \(\nu_k \ge 0\) and \(h_{\ell k} \geq 0\). The
+                parameters are the functions \(h_{\ell k}\) and the constants \(\nu_k\), with \(\ell, k \in [K]\).<br>
+                Estimation of \(\nu, h\) when \(K\) is allowed to grow with \(T\) has attracted recently some interest
+                under sparsity assumptions, i.e. assuming that for each \(k\) only a small number \(s_0\) of functions
+                \(h_{\ell k}\) can be non-null. However, only partial results on the estimation o the parameters have
+                been derived. <br>
+                In this talk I will show that under sparsity (on \(s_0\)) and stationarity assumptions it is possible to
+                estimate nonparametrically the \(K\) background rates \(\nu_k\) and the \(K_2\) interaction functions
+                \(h_{\ell k}\) when \(K\) is allowed to grow with \(T\) exponentially. <br>
+                I will provide results under the empirical \(L_1\) loss on the intensity functions and on the direct
+                \(L_1\) loss on the parameters. <br>
+                I will propose a two-step procedure which allows for the estimation of the parameters at a rate which is
+                not impacted by \(K\) even for very large \(K\)’s. <br>
+                I will also explain for finite \(K\) the specificities for deriving efficient semi-parametric theory in
+                these models, corresponding to the fact that we allow the functions \(h_{\ell k}\) to be equal to 0; I
+                will then provide conditions for verifying the semiparametric Bernstein von Mises property on
+                functionals in the form \(\Psi(\nu, h) = \Psi(\nu)\) or \(\Psi(\nu, h) = \Psi(h)\), where \(\Psi\) is
+                smooth. I will apply these results to the functionals \(\Psi(\nu, h) = \nu\) and \(\Psi(\nu, h) = \int
+                h_{\ell k}(x)dx\) and deduce from these a sharp result on the estimation of the graph of interaction.
+                The latter is defined as the adjacency matrix \(\Delta\) where \(\delta_{\ell k} = 1\) if and only if
+                \(\rho_{\ell k} = \int h_{\ell k}(x)dx \ge 0\).
             </td>
         </tr>
     </table>
@@ -787,10 +1081,10 @@
     <table id="Aymeric Dieuleveut">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+
             </td>
             <td class="title">
-                Reliable Uncertainty Quantification with Missing Data and Adaptive Conformal Selection 
+                Reliable Uncertainty Quantification with Missing Data and Adaptive Conformal Selection
             </td>
         </tr>
         <tr>
@@ -800,16 +1094,24 @@
         </tr>
         <tr>
             <td class="abstract">
-                Conformal prediction provides a flexible framework for constructing predictive sets with distribution-free coverage guarantees. Yet, practical settings often challenge these guarantees, for instance when covariates contain missing values or when multiple valid conformal sets are available. I will discuss recent work addressing these two issues. <br> The first part focuses on conformal prediction with missing covariates, examining how imputation and missingness patterns affect coverage and how new approaches can achieve validity conditional on missingness. The second part considers the problem of selecting among several conformal sets without compromising validity, through stability-based procedures that extend to online and structured contexts. These results contribute to a better understanding of how conformal methods behave under realistic data and modeling conditions.
+                Conformal prediction provides a flexible framework for constructing predictive sets with
+                distribution-free coverage guarantees. Yet, practical settings often challenge these guarantees, for
+                instance when covariates contain missing values or when multiple valid conformal sets are available. I
+                will discuss recent work addressing these two issues. <br> The first part focuses on conformal
+                prediction with missing covariates, examining how imputation and missingness patterns affect coverage
+                and how new approaches can achieve validity conditional on missingness. The second part considers the
+                problem of selecting among several conformal sets without compromising validity, through stability-based
+                procedures that extend to online and structured contexts. These results contribute to a better
+                understanding of how conformal methods behave under realistic data and modeling conditions.
             </td>
         </tr>
     </table>
 
-<!--
+    <!--
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                XX:YYzm
+                
             </td>
             <td class="title">
                 Interesting Title of a Talk 
@@ -1004,9 +1306,10 @@
 -->
     <footer>
         &copy; Workshop Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>, Alexander Fishkov. Photo by Nick Fewings/Unsplash.
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>, Alexander Fishkov. Photo by
+        Nick Fewings/Unsplash.
     </footer>
 
 </body>
-</html>
 
+</html>
