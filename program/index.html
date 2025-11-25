@@ -471,7 +471,7 @@
 
             </td>
             <td class="title">
-                Guiding Time-Varying Generative Models with Natural Gradients on Exponential Family Manifold
+                Missing Data Imputation by Reducing Mutual Information with Rectified Flows
             </td>
         </tr>
         <tr>
@@ -481,18 +481,24 @@
         </tr>
         <tr>
             <td class="abstract">
-                Optimising probabilistic models is a well-studied field in statistics. However, its connection with the
-                training of generative models remains largely under-explored. In this paper, we show that the evolution
-                of time-varying generative models can be projected onto an exponential family manifold, naturally
-                creating a link between the parameters of a generative model and those of a probabilistic model. We then
-                train the generative model by moving its projection on the manifold according to the natural gradient
-                descent scheme. This approach also allows us to efficiently approximate the natural gradient of the KL
-                divergence without relying on MCMC for intractable models. Furthermore, we propose particle versions of
-                the algorithm, which feature closed-form update rules for any parametric model within the exponential
-                family. Through toy and real-world experiments, we validate the effectiveness of the proposed
-                algorithms. The code of the proposed algorithms can be found <a
-                    href="https://github.com/anewgithubname/iNGD">here</a>.
-
+                This paper introduces a novel iterative method for missing 
+                data imputation that sequentially reduces the mutual 
+                information between data and their corresponding missing 
+                mask. Inspired by GAN-based approaches, which train 
+                generators to decrease the predictability of missingness 
+                patterns, our method explicitly targets the reduction of 
+                mutual information. Specifically, our algorithm iteratively 
+                minimizes the KL divergence between the joint distribution of 
+                the imputed data and missing mask, and the product of their 
+                marginals from the previous iteration. We show that the 
+                optimal imputation under this framework corresponds to 
+                solving an ODE, whose velocity field minimizes a rectified 
+                flow training objective. We further illustrate that some 
+                existing imputation techniques can be interpreted as 
+                approximate special cases of our mutual-information-reducing 
+                framework. Comprehensive experiments on synthetic and 
+                real-world datasets validate the efficacy of our proposed 
+                approach, demonstrating superior imputation performance.
             </td>
         </tr>
     </table>
